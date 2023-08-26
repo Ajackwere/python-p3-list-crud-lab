@@ -20,16 +20,24 @@ def remove_element_from_end_of_list(l):
         l.pop()
     return l
 def remove_element_from_start_of_list(l):
-    return None
+    if len(l) > 0:
+        del l[0]
+        return l
 
 
 def retrieve_first_element_from_list(l):
-    return None
+    if len(l) > 0:
+        first_number = l[0]
+        return first_number
+    else:
+        return None
 
 
 def retrieve_element_from_index(l, index):
-    return None
+    number_retrieved = l[index]
+    return number_retrieved
 
 
 def retrieve_last_element_from_list(l):
-    return None
+    last_element = l[-1]
+    return last_element
